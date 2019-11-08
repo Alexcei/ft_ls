@@ -92,7 +92,7 @@ void    ft_avlt_insert1(t_avltree1 **root, t_data *data, int (*cmp)(t_data *,t_d
     }
     else
     {
-        if (cmp((*root)->data, data) == 0)
+        if (cmp((*root)->data, data) > 0)
             ft_avlt_insert1(&((*root)->left), data, cmp);
         else
             ft_avlt_insert1(&((*root)->right), data, cmp);

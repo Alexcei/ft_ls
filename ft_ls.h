@@ -33,6 +33,7 @@ struct		s_data
     unsigned	    flag;
     time_t			sec;
     int				level;
+    int             args;
     int             count;
     unsigned long	total_size;
     unsigned long	nb_files;  //??
@@ -49,10 +50,10 @@ struct            s_avltree1
     t_avltree1      *right;
 }                         ;
 
-void		    ft_avlt_free1(t_avltree1 **root);
-void    ft_avlt_insert1(t_avltree1 **root, t_data *data, int (*cmp)(t_data *,t_data *));
-unsigned char   height1(t_avltree1* p);
-t_avltree1       *balance1(t_avltree1* p);
+void		      ft_avlt_free1(t_avltree1 **root);
+void              ft_avlt_insert1(t_avltree1 **root, t_data *data, int (*cmp)(t_data *,t_data *));
+unsigned char     height1(t_avltree1* p);
+t_avltree1        *balance1(t_avltree1* p);
 
 int     ft_ls_parse(int *ac, char ***av, unsigned *flag);
 void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned i), unsigned flag);

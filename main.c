@@ -1,8 +1,18 @@
 #include "ft_ls.h"
 
-int         ft_dir_cmp(t_data *data1, t_data *data2)
+int         ft_name_cmp(t_data *data1, t_data *data2)
 {
     return (ft_strcmp(data1->dir, data2->dir));
+}
+
+int         ft_date_cmp(t_data *data1, t_data *data2)
+{
+    long long ret;
+
+    ret = data2->sec - data1->sec;
+    if (ret != 0)
+        return (ret > 0 ? 1 : -1);
+    return (ft_name_cmp(data1, data2));
 }
 
 int	        is_hidden(char *name)
@@ -28,7 +38,10 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root)
         data_subtree = ft_get_data(buff, data->flag, data->level + 1, 0);
         if (data_subtree)
         {
-            ft_avlt_insert1(root, data_subtree, ft_dir_cmp);
+            if (data->flag & FLAG_T)
+                ft_avlt_insert1(root, data_subtree, ft_date_cmp);
+            else
+                ft_avlt_insert1(root, data_subtree, ft_name_cmp);
             data->nb_files = data->nb_files + 1;
             data->total_size = data->total_size + (data_subtree->stats).st_blocks;
         }
@@ -39,7 +52,7 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root)
 t_avltree1   *ft_creat_subtree(t_data *data) //, unsigned flag, int level, int count)
 {
     t_avltree1       *subtree;
-    struct dirent	*dirent;
+    struct dirent	 *dirent;
     DIR				*d;
 
     subtree = NULL;
@@ -63,7 +76,8 @@ t_data	*ft_get_values(t_data *data, unsigned flag, int level, int count)
     data->count = count;
     data->flag = flag;
     data->sec = (long)(data->stats).st_birthtimespec.tv_sec;
-    data->subtree = ft_creat_subtree(data);   //,  flag, level++, count);
+    //if (is_hidden(data->dir))                                !!!!!!!!!!!!!!!!!!!
+        data->subtree = ft_creat_subtree(data);   //,  flag, level++, count);!!!!!!!!!!!!!
     data->total_size = 0;
     if ((pwd = getpwuid((data->stats).st_uid)))
         data->pw_name = pwd->pw_name;
@@ -103,10 +117,7 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count)
 
     errno = 0;
     if (lstat(dir, &stats) == -1)
-    {
         ft_fprintf(1,"ls: %s: %s\n", dir, strerror(errno));
-        return (NULL);
-    }
     if (!(data = (t_data*)ft_memalloc(sizeof(t_data))))
         return (NULL);
     data->stats = stats;
@@ -123,15 +134,20 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
     int     i;
 
     i = 0;
-    while (i < ac - 1)
+    if (ac == 1)
     {
-        if (!av[i])
-            data = ft_get_data(".", flag, 0, i);
-        else
-            data = ft_get_data(av[i], flag, 0, i);
+        data = ft_get_data(".", flag, 0, i);
         if (!data)
             return (1);
-        ft_avlt_insert1(root, data, ft_dir_cmp);
+        data->args = 0;
+        ft_avlt_insert1(root, data, ft_name_cmp);
+    }
+    while (i < ac - 1)
+    {
+        data = ft_get_data(av[i], flag, 0, i);
+        if (!data)
+            return (1);
+        ft_avlt_insert1(root, data, ft_name_cmp);
         i++;
     }
     return (0);
@@ -154,10 +170,11 @@ void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned i),
 
 void    recursive(t_data *data, unsigned flag)
 {
-    if ((S_ISDIR(data->st_mode)))
-        ft_printf("%s:\n", data->dir);
+    if ((S_ISDIR(data->st_mode) && (data->count || data->args || data->level)))
+        ft_printf("\n%s:\n", data->dir);
     btree_apply_infix(data->subtree, print_files, flag);
-    //printf("\n");
+    //if ((S_ISDIR(data->st_mode)))
+      //  printf("-\n");
     if (flag & FLAG_R_UP)
         btree_apply_infix(data->subtree, recursive, flag);
 }
