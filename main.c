@@ -2,14 +2,20 @@
 
 int         ft_name_cmp(t_data *data1, t_data *data2)
 {
-    return (ft_strcmp(data1->dir, data2->dir));
+    if (data1->flag & FLAG_R)
+        return (ft_strcmp(data2->dir, data1->dir));
+    else
+        return (ft_strcmp(data1->dir, data2->dir));
 }
 
 int         ft_date_cmp(t_data *data1, t_data *data2)
 {
     long long ret;
 
-    ret = data2->sec - data1->sec;
+    if (data1->flag & FLAG_R)
+        ret = data1->sec - data2->sec;
+    else
+        ret = data2->sec - data1->sec;
     if (ret != 0)
         return (ret > 0 ? 1 : -1);
     return (ft_name_cmp(data1, data2));
@@ -27,8 +33,7 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root)
     char		*buff;
     t_data		*data_subtree;
 
-    if (!(buff = (char *)ft_memalloc(sizeof(char) * \
-		(ft_strlen(data->dir) + 5 + ft_strlen(d_name)))))
+    if (!(buff = (char *)ft_memalloc(sizeof(char) * (ft_strlen(data->dir) + 5 + ft_strlen(d_name)))))
         return ;
     ft_strcat(buff, data->dir);
     ft_strcat(buff, "/");
@@ -62,7 +67,10 @@ t_avltree1   *ft_creat_subtree(t_data *data) //, unsigned flag, int level, int c
         return (NULL);
     }
     while ((dirent = readdir(d)))
+    {
+        if (!is_hidden(dirent->d_name) || !data->level)
         fill_with_file(dirent->d_name, data, &subtree);
+    }
     closedir(d);
     return (subtree);
 }
@@ -76,8 +84,10 @@ t_data	*ft_get_values(t_data *data, unsigned flag, int level, int count)
     data->count = count;
     data->flag = flag;
     data->sec = (long)(data->stats).st_birthtimespec.tv_sec;
-    //if (is_hidden(data->dir))                                !!!!!!!!!!!!!!!!!!!
-        data->subtree = ft_creat_subtree(data);   //,  flag, level++, count);!!!!!!!!!!!!!
+    if (!is_hidden(data->filename) || (!data->level))     //  && !data->count
+        data->subtree = ft_creat_subtree(data);
+    else
+        data->subtree = NULL;
     data->total_size = 0;
     if ((pwd = getpwuid((data->stats).st_uid)))
         data->pw_name = pwd->pw_name;
@@ -123,8 +133,9 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count)
     data->stats = stats;
     data->st_mode = stats.st_mode;
     data->dir = ft_strdup(dir);
-    data = ft_get_values(data, flag, level, count);
     data->filename = ft_get_filename(data);
+    if (!is_hidden(data->filename) || (!data->count && !data->level))
+        data = ft_get_values(data, flag, level, count);
     return (data);
 }
 
@@ -132,14 +143,17 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
 {
     t_data	*data;
     int     i;
+    int     args;
 
     i = 0;
+    args = ac - 1;
     if (ac == 1)
     {
+
         data = ft_get_data(".", flag, 0, i);
         if (!data)
             return (1);
-        data->args = 0;
+        data->args = args;
         ft_avlt_insert1(root, data, ft_name_cmp);
     }
     while (i < ac - 1)
@@ -147,6 +161,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
         data = ft_get_data(av[i], flag, 0, i);
         if (!data)
             return (1);
+        data->args = args;
         ft_avlt_insert1(root, data, ft_name_cmp);
         i++;
     }
@@ -155,7 +170,10 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
 
 void    print_files(t_data *data, unsigned flag)
 {
-    flag = 0;
+    int i;
+
+    if (flag == 0)
+        i = 2;
     ft_printf("%s\n", data->filename);
 }
 
@@ -170,11 +188,14 @@ void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned i),
 
 void    recursive(t_data *data, unsigned flag)
 {
-    if ((S_ISDIR(data->st_mode) && (data->count || data->args || data->level)))
-        ft_printf("\n%s:\n", data->dir);
+    if (S_ISDIR(data->st_mode))
+    {
+        if (data->count || data->level)
+            ft_printf("\n");
+        if ((data->args > 1 || data->level))
+            ft_printf("%s:\n", data->dir);
+    }
     btree_apply_infix(data->subtree, print_files, flag);
-    //if ((S_ISDIR(data->st_mode)))
-      //  printf("-\n");
     if (flag & FLAG_R_UP)
         btree_apply_infix(data->subtree, recursive, flag);
 }

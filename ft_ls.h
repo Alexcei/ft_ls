@@ -20,6 +20,7 @@
 # define FLAG_A (1u << 2u)
 # define FLAG_R (1u << 3u)
 # define FLAG_T (1u << 4u)
+# define FLAG_ONE (1u << 5u)
 
 typedef struct s_avltree1   t_avltree1;
 typedef struct s_data   t_data;
