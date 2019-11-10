@@ -1,31 +1,5 @@
 #include "ft_ls.h"
 
-int         ft_name_cmp(t_data *data1, t_data *data2)
-{
-    if (data1->flag & FLAG_R)
-        return (ft_strcmp(data2->dir, data1->dir));
-    else
-        return (ft_strcmp(data1->dir, data2->dir));
-}
-
-int         ft_date_cmp(t_data *data1, t_data *data2)
-{
-    long long ret;
-
-    if (data1->flag & FLAG_R)
-        ret = data1->sec - data2->sec;
-    else
-        ret = data2->sec - data1->sec;
-    if (ret != 0)
-        return (ret > 0 ? 1 : -1);
-    return (ft_name_cmp(data1, data2));
-}
-
-int	        is_hidden(char *name)
-{
-    return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, "..") == 0 || name[0] == '.');
-}
-
 t_data			*ft_get_data(char *dir, unsigned flag, int level, int count);
 
 static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root)
@@ -55,7 +29,7 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root)
     ft_memdel((void **)&buff);
 }
 
-t_avltree1   *ft_creat_subtree(t_data *data) //, unsigned flag, int level, int count)
+t_avltree1   *ft_creat_subtree(t_data *data)
 {
     t_avltree1       *subtree;
     struct dirent	 *dirent;
@@ -68,10 +42,7 @@ t_avltree1   *ft_creat_subtree(t_data *data) //, unsigned flag, int level, int c
         return (NULL);
     }
     while ((dirent = readdir(d)))
-    {
-        if (!is_hidden(dirent->d_name) || !data->level)
         fill_with_file(dirent->d_name, data, &subtree);
-    }
     closedir(d);
     return (subtree);
 }
@@ -84,18 +55,25 @@ t_data	*ft_get_values(t_data *data, unsigned flag, int level, int count)
     data->level = level;
     data->count = count;
     data->flag = flag;
+    data->time = (data->stats).st_mtime;
     data->sec = (long)(data->stats).st_birthtimespec.tv_sec;
-    if (!is_hidden(data->filename) || (!data->level))     //  && !data->count
+    if (!is_hidden(data->filename) || (!data->level))
         data->subtree = ft_creat_subtree(data);
     else
         data->subtree = NULL;
     data->total_size = 0;
     if ((pwd = getpwuid((data->stats).st_uid)))
+    {
         data->pw_name = pwd->pw_name;
+        data->w_pw_name = MAX((int)ft_strlen(data->pw_name) + 1, data->w_pw_name);
+    }
     else
         data->pw_name = NULL;
     if ((grp = getgrgid((data->stats).st_gid)))
+    {
         data->gr_name = grp->gr_name;
+        data->w_gr_name = MAX((int)ft_strlen(data->gr_name), data->w_gr_name);
+    }
     else
         data->gr_name = NULL;
     return (data);
@@ -125,6 +103,7 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count)
 {
     t_data	    *data;
     struct stat stats;
+    int num_len;
 
     errno = 0;
     if (lstat(dir, &stats) == -1)
@@ -133,6 +112,9 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count)
         return (NULL);
     data->stats = stats;
     data->st_mode = stats.st_mode;
+    num_len = ft_fprintf(-1, "%lld", data->stats.st_nlink);
+    data->w_st_nlink = MAX(num_len, data->w_st_nlink);
+    data->w_st_nlink++;
     data->dir = ft_strdup(dir);
     data->filename = ft_get_filename(data);
     if (!is_hidden(data->filename) || (!data->count && !data->level))
@@ -150,7 +132,6 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
     args = ac - 1;
     if (ac == 1)
     {
-
         data = ft_get_data(".", flag, 0, i);
         if (!data)
             return (1);
@@ -171,12 +152,150 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
     return (0);
 }
 
-void    print_files(t_data *data, unsigned flag)
+void	print_type(int mode)
+{
+    char		c;
+
+    if (S_ISREG(mode))
+        c = '-';
+    else if (S_ISDIR(mode))
+        c = 'd';
+    else if (S_ISBLK(mode))
+        c = 'b';
+    else if (S_ISCHR(mode))
+        c = 'c';
+    else if (S_ISLNK(mode))
+        c = 'l';
+    else if (S_ISSOCK(mode))
+        c = 's';
+    else
+        c = '-';
+    ft_printf("%c", c);
+}
+
+void	print_permissions(t_data *data)
+{
+    int			mode;
+
+    mode = data->stats.st_mode;
+    print_type(mode);
+    ft_printf((mode & S_IRUSR) ? "r" : "-");
+    ft_printf((mode & S_IWUSR) ? "w" : "-");
+    if (mode & S_ISUID)
+        ft_printf((mode & S_IXUSR) ? "s" : "S");
+    else
+        ft_printf((mode & S_IXUSR) ? "x" : "-");
+    ft_printf((mode & S_IRGRP) ? "r" : "-");
+    ft_printf((mode & S_IWGRP) ? "w" : "-");
+    if (mode & S_ISGID)
+        ft_printf((mode & S_IXGRP) ? "s" : "S");
+    else
+        ft_printf((mode & S_IXGRP) ? "x" : "-");
+    ft_printf((mode & S_IROTH) ? "r" : "-");
+    ft_printf((mode & S_IWOTH) ? "w" : "-");
+    if (mode & S_ISVTX)
+        ft_printf((mode & S_IXUSR) ? "t" : "T");
+    else
+        ft_printf((mode & S_IXOTH) ? "x" : "-");
+}
+/*
+void	print_file(t_data *data)
+{
+    struct stat		stats;
+    struct passwd	*pwd;
+    struct group	*grp;
+
+
+    stats = data->stats;
+    pwd = getpwuid(stats.st_uid);
+    grp = getgrgid(stats.st_gid);
+    print_permissions(file);
+    ft_printf(" %*d %-*s %-*s ", widths[0], stats.st_nlink, widths[1], pwd->pw_name, widths[2], grp->gr_name);
+    ft_printf(" %*lld %s ", widths[3], stats.st_size, time_string(stats.st_mtime, args));
+    if (S_ISLNK(stats.st_mode) && args.l)
+        print_link(file, args);
+    else
+        ft_printf("%s\n", file->filename);
+}
+
+void	set_widths(int widths[5], t_list *files)
+{
+    struct stat		stats;
+    struct passwd	*pwd;
+    struct group	*grp;
+    int				num_len;
+
+    widths[0] = 0;
+    widths[1] = 0;
+    widths[2] = 0;
+    widths[3] = 0;
+    widths[4] = 0;
+    while (files)
+    {
+        stats = ((t_path *)files->content)->stats;
+        pwd = getpwuid(stats.st_uid);
+        grp = getgrgid(stats.st_gid);
+        num_len = ft_fprintf(-1, "%lld", stats.st_nlink);
+        widths[0] = MAX(num_len, widths[0]);
+        widths[1] = MAX((int)ft_strlen(pwd->pw_name) + 1, widths[1]);
+        widths[2] = MAX((int)ft_strlen(grp->gr_name), widths[2]);
+        num_len = ft_dprintf(-1, "%lld", stats.st_size);
+        widths[3] = MAX(num_len, widths[3]);
+        widths[4] = MAX(year_length(stats.st_mtime), widths[4]);
+        files = files->next;
+    }
+    widths[0]++;
+}*/
+
+static int	ft_nblen(char *str)
 {
     int i;
 
-    if (flag == 0)
-        i = 2;
+    i = 0;
+    while (str[i] && str[i] != '\n')
+        i++;
+    return (i);
+}
+
+static char	*ft_strtim_return(char *str)
+{
+    int i;
+
+    i = 0;
+    while (str[i] && str[i] == ' ')
+        i++;
+    return (str + i);
+}
+
+# define SIXMONTHS ((365 / 2) * 86400)
+
+void		ft_print_date(t_data *data)
+{
+    char	*string;
+    time_t	now;
+
+    now = time(NULL);
+    string = ctime((time_t *)&(data->time));
+    ft_printf("%3.3s ", string + 4);
+    ft_printf("%2.2s ", string + 8);
+    if ((now - data->time) > SIXMONTHS || (time_t)now < data->time)
+        ft_printf("%5.*s ", ft_nblen(ft_strtim_return(string + 20)), \
+			ft_strtim_return(string + 20));
+    else
+        ft_printf("%5.5s ", string + 11);
+}
+
+void    print_files(t_data *data, unsigned flag)
+{
+    if (flag & FLAG_L)
+    {
+        print_permissions(data);
+        ft_printf(" %*d ", data->w_st_nlink, data->stats.st_nlink);
+        ft_printf("%-*s", data->w_pw_name, data->pw_name);
+        ft_printf(" %-*s ", data->w_gr_name, data->gr_name);
+        ft_printf(" %*lld ", data->w_st_nlink, data->stats.st_size);
+        ft_print_date(data);
+    }
     ft_printf("%s\n", data->filename);
 }
 
@@ -191,7 +310,7 @@ void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned i),
 
 void    recursive(t_data *data, unsigned flag)
 {
-    if (S_ISDIR(data->st_mode))
+    if (S_ISDIR(data->st_mode) && (!is_hidden(data->filename) || (data->args > 1 && !data->level)))
     {
         if (data->count || data->level)
             ft_printf("\n");

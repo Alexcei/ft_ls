@@ -33,6 +33,11 @@ struct		s_data
     unsigned long	st_mode;
     unsigned	    flag;
     time_t			sec;
+    time_t			time;
+    int             w_st_nlink;
+    int             w_pw_name;
+    int             w_gr_name;
+    //int             w_st_size;
     int				level;
     int             args;
     int             count;
@@ -58,5 +63,9 @@ t_avltree1        *balance1(t_avltree1* p);
 
 int     ft_ls_parse(int *ac, char ***av, unsigned *flag);
 void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned i), unsigned flag);
+
+int         ft_name_cmp(t_data *data1, t_data *data2);
+int         ft_date_cmp(t_data *data1, t_data *data2);
+int	        is_hidden(char *name);
 
 #endif
