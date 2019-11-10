@@ -49,6 +49,7 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root)
                 ft_avlt_insert1(root, data_subtree, ft_name_cmp);
             data->nb_files = data->nb_files + 1;
             data->total_size = data->total_size + (data_subtree->stats).st_blocks;
+            free(data_subtree);
         }
     }
     ft_memdel((void **)&buff);
@@ -155,6 +156,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
             return (1);
         data->args = args;
         ft_avlt_insert1(root, data, ft_name_cmp);
+        free(data);
     }
     while (i < ac - 1)
     {
@@ -163,6 +165,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
             return (1);
         data->args = args;
         ft_avlt_insert1(root, data, ft_name_cmp);
+        free(data);
         i++;
     }
     return (0);
