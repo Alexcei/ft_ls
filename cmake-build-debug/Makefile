@@ -2202,6 +2202,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.s
 .PHONY : main.c.s
 
+out_put.o: out_put.c.o
+
+.PHONY : out_put.o
+
+# target to build an object file
+out_put.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o
+.PHONY : out_put.c.o
+
+out_put.i: out_put.c.i
+
+.PHONY : out_put.i
+
+# target to preprocess a source file
+out_put.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.i
+.PHONY : out_put.c.i
+
+out_put.s: out_put.c.s
+
+.PHONY : out_put.s
+
+# target to generate assembly for a file
+out_put.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.s
+.PHONY : out_put.c.s
+
 parse.o: parse.c.o
 
 .PHONY : parse.o
@@ -2496,6 +2523,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... out_put.o"
+	@echo "... out_put.i"
+	@echo "... out_put.s"
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"

@@ -21,6 +21,14 @@
 # define FLAG_R (1u << 3u)
 # define FLAG_T (1u << 4u)
 # define FLAG_ONE (1u << 5u)
+# define FLAG_SPC (1u << 10u)
+
+typedef struct      s_width
+{
+    int             w_st_nlink;
+    int             w_pw_name;
+    int             w_gr_name;
+}           t_width;
 
 typedef struct s_avltree1   t_avltree1;
 typedef struct s_data   t_data;
@@ -34,10 +42,6 @@ struct		s_data
     unsigned	    flag;
     time_t			sec;
     time_t			time;
-    int             w_st_nlink;
-    int             w_pw_name;
-    int             w_gr_name;
-    //int             w_st_size;
     int				level;
     int             args;
     int             count;
@@ -45,6 +49,7 @@ struct		s_data
     unsigned long	nb_files;  //??
     char			*pw_name;
     char			*gr_name;
+    t_width         *width;
     t_avltree1		*subtree;
 }					;
 
@@ -62,10 +67,12 @@ unsigned char     height1(t_avltree1* p);
 t_avltree1        *balance1(t_avltree1* p);
 
 int     ft_ls_parse(int *ac, char ***av, unsigned *flag);
-void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned i), unsigned flag);
+void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned *i), unsigned *flag);
 
 int         ft_name_cmp(t_data *data1, t_data *data2);
 int         ft_date_cmp(t_data *data1, t_data *data2);
 int	        is_hidden(char *name);
+
+void    print_files(t_data *data, unsigned *flag);
 
 #endif

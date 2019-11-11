@@ -21,6 +21,16 @@ int         ft_date_cmp(t_data *data1, t_data *data2)
     return (ft_name_cmp(data1, data2));
 }
 
+
+void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned *i), unsigned *flag)
+{
+    if (root == 0)
+        return ;
+    btree_apply_infix(root->left, (*applyf), flag);
+    (*applyf)(root->data, flag);
+    btree_apply_infix(root->right, (*applyf), flag);
+}
+
 int	        is_hidden(char *name)
 {
     return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, "..") == 0 || name[0] == '.');
