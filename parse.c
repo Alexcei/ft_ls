@@ -16,6 +16,8 @@ static int     pars_flag(char **av, unsigned *flag)
             *flag |= 1u << 4u;
         else if (**av == '1')
             *flag |= 1u << 5u;
+        else if (**av == '-')
+            return (1);
         else
         {
             ft_fprintf(2, "ls: illegal option -- %c\n", **av);
@@ -29,13 +31,24 @@ static int     pars_flag(char **av, unsigned *flag)
 
 int     ft_ls_parse(int *ac, char ***av, unsigned *flag)
 {
-    while (**av && *av[0][0] == '-')
+    int     ret;
+
+    while (**av && av[0][0][0] == '-' && av[0][0][1])
     {
         (**av)++;
-        if ((pars_flag(*av, flag) == -1))
+        ret = pars_flag(*av, flag);
+        if (ret == -1)
             return (1);
+        else if (ret == 1)
+        {
+            (*av)++;
+            (*ac)--;
+            break;
+        }
         (*av)++;
         (*ac)--;
     }
+    //if (*flag & FLAG_ONE)
+      //  *flag ^= 1u;
     return (0);
 }

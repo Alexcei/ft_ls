@@ -83,16 +83,29 @@ void		ft_print_date(t_data *data)
         ft_printf("%5.5s ", string + 11);
 }
 
+void	print_link(t_data *data)
+{
+    char *tmp;
+
+    tmp = ft_strnew(PATH_MAX);
+    readlink(data->dir, tmp, PATH_MAX - 1);
+    ft_printf("%s -> %s\n", data->filename, tmp);
+    free(tmp);
+}
+
 void    print_files(t_data *data, unsigned *flag)
 {
     if (*flag & FLAG_L)
     {
         print_permissions(data);
         ft_printf(" %*d ", data->width->w_st_nlink, data->stats.st_nlink);
-        ft_printf("%-*s", data->width->w_pw_name, data->pw_name);
+        ft_printf("%-*s ", data->width->w_pw_name, data->pw_name);
         ft_printf(" %-*s ", data->width->w_gr_name, data->gr_name);
-        ft_printf(" %*lld ", data->width->w_st_nlink, data->stats.st_size);
+        ft_printf(" %*lld ", data->width->w_st_size, data->stats.st_size);
         ft_print_date(data);
     }
-    ft_printf("%s\n", data->filename);
+    if (S_ISLNK((data->stats).st_mode) && *flag & FLAG_L)
+        print_link(data);
+    else
+        ft_printf("%s\n", data->filename);
 }

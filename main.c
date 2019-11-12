@@ -22,7 +22,7 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root, t_
             else
                 ft_avlt_insert1(root, data_subtree, ft_name_cmp);
             data->nb_files = data->nb_files + 1;
-            data->total_size = data->total_size + (data_subtree->stats).st_blocks;
+            data->total_size += (data_subtree->stats).st_blocks;
             free(data_subtree);
         }
     }
@@ -43,6 +43,7 @@ void    ft_set_width(t_data *data, t_width *width)
     data->width->w_st_nlink = width->w_st_nlink;
     data->width->w_gr_name = width->w_gr_name;
     data->width->w_pw_name = width->w_pw_name;
+    data->width->w_st_size = width->w_st_size;
 }
 
 t_avltree1   *ft_creat_subtree(t_data *data)
@@ -80,7 +81,6 @@ t_data	*ft_get_values(t_data *data, unsigned flag, int level, int count, t_width
         data->subtree = ft_creat_subtree(data);
     else
         data->subtree = NULL;
-    data->total_size = 0;
     if ((pwd = getpwuid((data->stats).st_uid)))
     {
         data->pw_name = pwd->pw_name;
@@ -132,10 +132,11 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     data->width = ft_memalloc(sizeof(t_width));
     data->stats = stats;
     data->st_mode = stats.st_mode;
-    num_len = ft_fprintf(-1, "%lld", data->stats.st_nlink);
+    num_len = ft_fprintf(-1, "%lld", data->stats.st_nlink) + 1;
     width->w_st_nlink = MAX(num_len, width->w_st_nlink);
-    //width->w_st_nlink++;
     data->dir = ft_strdup(dir);
+    num_len = ft_fprintf(-1, "%lld", stats.st_size);
+    width->w_st_size = MAX(num_len, width->w_st_size);
     data->filename = ft_get_filename(data);
     if (!is_hidden(data->filename) || (!data->count && !data->level))
         data = ft_get_values(data, flag, level, count, width);
@@ -159,7 +160,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
             return (1);
         data->args = args;
         ft_avlt_insert1(root, data, ft_name_cmp);
-        btree_apply_infix_w(*root, ft_set_width, &width);  // why?
+        btree_apply_infix_w(*root, ft_set_width, &width);
         free(data);
     }
     while (i < ac - 1)
@@ -169,7 +170,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
             return (1);
         data->args = args;
         ft_avlt_insert1(root, data, ft_name_cmp);
-        btree_apply_infix_w(*root, ft_set_width, &width);  // why?
+        btree_apply_infix_w(*root, ft_set_width, &width);
         free(data);
         i++;
     }
@@ -187,9 +188,27 @@ void    recursive(t_data *data, unsigned *flag)
         if ((data->args > 1 || data->level))
             ft_printf("%s:\n", data->dir);
     }
+    if (*flag & FLAG_L && data->nb_files)
+    {
+        ft_printf("total %d\n", data->total_size);
+        *flag |= 1u << 10u;
+    }
     btree_apply_infix(data->subtree, print_files, flag);
     if (*flag & FLAG_R_UP)
         btree_apply_infix(data->subtree, recursive, flag);
+}
+
+void    first_put(t_data *data, unsigned *flag)
+{
+    if (lstat(data->dir, &(data->stats)) == -1)
+        return ;
+    if (S_ISLNK((data->stats).st_mode) && *flag & FLAG_L)
+        print_files(data, flag);
+    else if ((!S_ISDIR(data->st_mode) && flag))
+    {
+        ft_printf("%s\n", data->filename);
+        *flag |= 1u << 10u;
+    }
 }
 
 int			main(int ac, char **av)
@@ -207,6 +226,7 @@ int			main(int ac, char **av)
         ft_avlt_free1(&root_content);
         return (1);
     }
+    btree_apply_infix(root_content, first_put, &flag);
     btree_apply_infix(root_content, recursive, &flag);
     ft_avlt_free1(&root_content);
     return (0);

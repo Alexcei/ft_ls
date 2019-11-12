@@ -15,7 +15,7 @@ NAME = ft_ls
 LIB_DIR = ./ft_printf/
 LIBFT = $(LIB_DIR)libftprintf.a
 
-SRC = ./main.c ./avl.c ./parse.c ./util.c
+SRC = ./main.c ./avl.c ./parse.c ./util.c ./out_put.c
 
 OBJ = $(SRC:.c=.o)
 

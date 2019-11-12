@@ -1,0 +1,111 @@
+dir/a:
+total 0
+-rw-r--r--  1 bpole  2019    0 Nov  8 12:15 test_a
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 ca
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:14 ba
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 aa
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 .
+
+dir/a/ca:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 .
+
+dir/a/ba:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:14 .
+
+dir/a/aa:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 .
+
+dir:
+total 328
+-rw-r--r--   1 bpole  2019  166805 Nov 11 19:45 test
+drwxr-xr-x   2 bpole  2019      68 Nov  8 00:20 c
+drwxr-xr-x   2 bpole  2019      68 Nov  8 00:20 b
+-rw-r--r--   1 bpole  2019       0 Nov  8 12:46 a_dir
+drwxr-xr-x   6 bpole  2019     204 Nov  8 12:15 a
+drwxr-xr-x  28 bpole  2019     952 Nov 11 20:07 ..
+drwxr-xr-x   7 bpole  2019     238 Nov 11 19:45 .
+
+dir/c:
+total 0
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 00:20 .
+
+dir/b:
+total 0
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 00:20 .
+
+dir/a:
+total 0
+-rw-r--r--  1 bpole  2019    0 Nov  8 12:15 test_a
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 ca
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:14 ba
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 aa
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 .
+
+dir/a/ca:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 .
+
+dir/a/ba:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:14 .
+
+dir/a/aa:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 .
+
+dir:
+total 328
+-rw-r--r--   1 bpole  2019  166805 Nov 11 19:45 test
+drwxr-xr-x   2 bpole  2019      68 Nov  8 00:20 c
+drwxr-xr-x   2 bpole  2019      68 Nov  8 00:20 b
+-rw-r--r--   1 bpole  2019       0 Nov  8 12:46 a_dir
+drwxr-xr-x   6 bpole  2019     204 Nov  8 12:15 a
+drwxr-xr-x  28 bpole  2019     952 Nov 11 20:07 ..
+drwxr-xr-x   7 bpole  2019     238 Nov 11 19:45 .
+
+dir/c:
+total 0
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 00:20 .
+
+dir/b:
+total 0
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 00:20 .
+
+dir/a:
+total 0
+-rw-r--r--  1 bpole  2019    0 Nov  8 12:15 test_a
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 ca
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:14 ba
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 aa
+drwxr-xr-x  7 bpole  2019  238 Nov 11 19:45 ..
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 .
+
+dir/a/ca:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 .
+
+dir/a/ba:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:14 .
+
+dir/a/aa:
+total 0
+drwxr-xr-x  6 bpole  2019  204 Nov  8 12:15 ..
+drwxr-xr-x  2 bpole  2019   68 Nov  8 12:15 .

@@ -28,7 +28,8 @@ typedef struct      s_width
     int             w_st_nlink;
     int             w_pw_name;
     int             w_gr_name;
-}           t_width;
+    int             w_st_size;
+}                   t_width;
 
 typedef struct s_avltree1   t_avltree1;
 typedef struct s_data   t_data;
@@ -46,7 +47,7 @@ struct		s_data
     int             args;
     int             count;
     unsigned long	total_size;
-    unsigned long	nb_files;  //??
+    unsigned long	nb_files;
     char			*pw_name;
     char			*gr_name;
     t_width         *width;
