@@ -12,6 +12,8 @@
 # include <time.h>
 # include <errno.h>
 # include <stdio.h>
+# include <sys/xattr.h>
+# include <sys/acl.h>
 
 # define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
 
@@ -41,7 +43,6 @@ struct		s_data
     struct stat		stats;
     unsigned long	st_mode;
     unsigned	    flag;
-    time_t			sec;
     time_t			time;
     int				level;
     int             args;
@@ -72,7 +73,7 @@ void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned *i)
 
 int         ft_name_cmp(t_data *data1, t_data *data2);
 int         ft_date_cmp(t_data *data1, t_data *data2);
-int	        is_hidden(char *name);
+int	        is_hidden(char *name, unsigned flag);
 
 void    print_files(t_data *data, unsigned *flag);
 

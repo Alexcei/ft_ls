@@ -27,6 +27,10 @@ errno.h
 -
 stdio.h
 -
+sys/xattr.h
+-
+sys/acl.h
+-
 
 /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.h
 stdarg.h

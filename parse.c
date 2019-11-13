@@ -2,6 +2,9 @@
 
 static int     pars_flag(char **av, unsigned *flag)
 {
+    int tr;
+
+    tr = 1;
     while (**av)
     {
         if (**av == 'l')
@@ -15,8 +18,11 @@ static int     pars_flag(char **av, unsigned *flag)
         else if (**av == 't')
             *flag |= 1u << 4u;
         else if (**av == '1')
+        {
             *flag |= 1u << 5u;
-        else if (**av == '-')
+            *flag &= 0u;
+        }
+        else if (**av == '-' && tr && !(*av)[1])
             return (1);
         else
         {
@@ -25,6 +31,7 @@ static int     pars_flag(char **av, unsigned *flag)
             return (-1);
         }
         (*av)++;
+        tr = 0;
     }
     return (0);
 }
@@ -48,7 +55,5 @@ int     ft_ls_parse(int *ac, char ***av, unsigned *flag)
         (*av)++;
         (*ac)--;
     }
-    //if (*flag & FLAG_ONE)
-      //  *flag ^= 1u;
     return (0);
 }

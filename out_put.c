@@ -77,8 +77,7 @@ void		ft_print_date(t_data *data)
     ft_printf("%3.3s ", string + 4);
     ft_printf("%2.2s ", string + 8);
     if ((now - data->time) > (365 / 2) * 86400 || (time_t)now < data->time)
-        ft_printf("%5.*s ", ft_nblen(ft_strtim_return(string + 20)), \
-			ft_strtim_return(string + 20));
+        ft_printf(" %.*s ", ft_nblen(ft_strtim_return(string + 20)), ft_strtim_return(string + 20));
     else
         ft_printf("%5.5s ", string + 11);
 }

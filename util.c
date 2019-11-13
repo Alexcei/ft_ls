@@ -13,14 +13,13 @@ int         ft_date_cmp(t_data *data1, t_data *data2)
     long long ret;
 
     if (data1->flag & FLAG_R)
-        ret = data1->sec - data2->sec;
+        ret = data1->time - data2->time;
     else
-        ret = data2->sec - data1->sec;
+        ret = data2->time - data1->time;
     if (ret != 0)
         return (ret > 0 ? 1 : -1);
     return (ft_name_cmp(data1, data2));
 }
-
 
 void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned *i), unsigned *flag)
 {
@@ -31,7 +30,7 @@ void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned *i)
     btree_apply_infix(root->right, (*applyf), flag);
 }
 
-int	        is_hidden(char *name)
+int	        is_hidden(char *name, unsigned flag)
 {
-    return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, "..") == 0 || name[0] == '.');
+    return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, ".." ) == 0 || (name[0] == '.' && !(flag & FLAG_A)));
 }

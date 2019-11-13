@@ -12,7 +12,7 @@ static void	    fill_with_file(char *d_name, t_data *data, t_avltree1 **root, t_
     ft_strcat(buff, data->dir);
     ft_strcat(buff, "/");
     ft_strcat(buff, d_name);
-    if (!is_hidden(d_name) || data->flag & FLAG_A)
+    if (!is_hidden(d_name, data->flag) || data->flag & FLAG_A)
     {
         data_subtree = ft_get_data(buff, data->flag, data->level + 1, 0, width);
         if (data_subtree)
@@ -53,11 +53,12 @@ t_avltree1   *ft_creat_subtree(t_data *data)
     DIR				*d;
     t_width     width;
 
+    errno = 0;
     subtree = NULL;
     ft_bzero(&width, sizeof(t_width));
     if (!(d = opendir(data->dir)))
     {
-        data->st_mode = 0;
+        //data->st_mode = 0;
         return (NULL);
     }
     while ((dirent = readdir(d)))
@@ -76,8 +77,7 @@ t_data	*ft_get_values(t_data *data, unsigned flag, int level, int count, t_width
     data->count = count;
     data->flag = flag;
     data->time = (data->stats).st_mtime;
-    data->sec = (long)(data->stats).st_birthtimespec.tv_sec;
-    if (!is_hidden(data->filename) || (!data->level))
+    if (!is_hidden(data->filename, data->flag) || (!data->level))
         data->subtree = ft_creat_subtree(data);
     else
         data->subtree = NULL;
@@ -123,10 +123,11 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     t_data	    *data;
     struct stat stats;
     int num_len;
+    DIR				*d;
 
     errno = 0;
     if (lstat(dir, &stats) == -1)
-        ft_fprintf(1,"ls: %s: %s\n", dir, strerror(errno));
+        ft_fprintf(2,"ls: %s: %s\n", dir, strerror(errno));
     if (!(data = (t_data*)ft_memalloc(sizeof(t_data))))
         return (NULL);
     data->width = ft_memalloc(sizeof(t_width));
@@ -135,10 +136,13 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     num_len = ft_fprintf(-1, "%lld", data->stats.st_nlink) + 1;
     width->w_st_nlink = MAX(num_len, width->w_st_nlink);
     data->dir = ft_strdup(dir);
+    errno = 0;
+    if (!(d = opendir(data->dir)) && S_ISDIR(data->st_mode) && (!level || flag & FLAG_R_UP))          // !!!!!!!!!!!!!!!!!!
+        ft_fprintf(2,"ls: %s: %s\n", data->dir, strerror(errno));  // !!!!!!!!!!!!
     num_len = ft_fprintf(-1, "%lld", stats.st_size);
     width->w_st_size = MAX(num_len, width->w_st_size);
     data->filename = ft_get_filename(data);
-    if (!is_hidden(data->filename) || (!data->count && !data->level))
+    if (!is_hidden(data->filename, data->flag) || (!data->count && !data->level))
         data = ft_get_values(data, flag, level, count, width);
     return (data);
 }
@@ -159,17 +163,28 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
         if (!data)
             return (1);
         data->args = args;
-        ft_avlt_insert1(root, data, ft_name_cmp);
+        if (data->flag & FLAG_T)
+            ft_avlt_insert1(root, data, ft_date_cmp);
+        else
+            ft_avlt_insert1(root, data, ft_name_cmp);
         btree_apply_infix_w(*root, ft_set_width, &width);
         free(data);
     }
     while (i < ac - 1)
     {
+        if (!av[i][0])
+        {
+            ft_fprintf(2, "ls: fts_open: No such file or directory\n");
+            exit(1);
+        }
         data = ft_get_data(av[i], flag, 0, i, &width);
         if (!data)
             return (1);
         data->args = args;
-        ft_avlt_insert1(root, data, ft_name_cmp);
+        if (data->flag & FLAG_T)
+            ft_avlt_insert1(root, data, ft_date_cmp);
+        else
+            ft_avlt_insert1(root, data, ft_name_cmp);
         btree_apply_infix_w(*root, ft_set_width, &width);
         free(data);
         i++;
@@ -179,7 +194,9 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
 
 void    recursive(t_data *data, unsigned *flag)
 {
-    if (S_ISDIR(data->st_mode) && (!is_hidden(data->filename) || (data->args > 1 && !data->level)))
+    if (S_ISLNK((data->stats).st_mode) && *flag &FLAG_R_UP)
+        return;
+    if (S_ISDIR((data->stats).st_mode) && (!is_hidden(data->filename, data->flag) || (data->args > 0 && !data->level)))   // || S_ISLNK((data->stats).st_mode)
     {
         if (*flag & FLAG_SPC)
             ft_printf("\n");
@@ -194,6 +211,8 @@ void    recursive(t_data *data, unsigned *flag)
         *flag |= 1u << 10u;
     }
     btree_apply_infix(data->subtree, print_files, flag);
+    if (data->st_mode)
+        *flag |= 1u << 10u;
     if (*flag & FLAG_R_UP)
         btree_apply_infix(data->subtree, recursive, flag);
 }
@@ -204,10 +223,15 @@ void    first_put(t_data *data, unsigned *flag)
         return ;
     if (S_ISLNK((data->stats).st_mode) && *flag & FLAG_L)
         print_files(data, flag);
-    else if ((!S_ISDIR(data->st_mode) && flag))
+    else if (!S_ISDIR(data->st_mode) && *flag &FLAG_L)
+        print_files(data, flag);
+    else if (!S_ISDIR(data->st_mode))
     {
-        ft_printf("%s\n", data->filename);
-        *flag |= 1u << 10u;
+        if (!(S_ISLNK((data->stats).st_mode) && !data->level && data->args == 1 && data->subtree))
+        {
+            ft_printf("%s\n", data->filename);
+            *flag |= 1u << 10u;
+        }
     }
 }
 
