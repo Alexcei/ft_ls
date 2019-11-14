@@ -76,7 +76,7 @@ int         ft_date_cmp(t_data *data1, t_data *data2);
 int	        is_hidden(char *name, unsigned flag);
 
 void    print_files(t_data *data, unsigned *flag);
-//void    ft_print_arr(char ***str);
+char    **ft_sort_args(char **av, int ac);
 int     check_link(t_data *data);
 
 #endif

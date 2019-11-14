@@ -2364,6 +2364,33 @@ parse.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.s
 .PHONY : parse.c.s
 
+sort_args.o: sort_args.c.o
+
+.PHONY : sort_args.o
+
+# target to build an object file
+sort_args.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o
+.PHONY : sort_args.c.o
+
+sort_args.i: sort_args.c.i
+
+.PHONY : sort_args.i
+
+# target to preprocess a source file
+sort_args.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.i
+.PHONY : sort_args.c.i
+
+sort_args.s: sort_args.c.s
+
+.PHONY : sort_args.s
+
+# target to generate assembly for a file
+sort_args.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.s
+.PHONY : sort_args.c.s
+
 util.o: util.c.o
 
 .PHONY : util.o
@@ -2649,6 +2676,9 @@ help:
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"
+	@echo "... sort_args.o"
+	@echo "... sort_args.i"
+	@echo "... sort_args.s"
 	@echo "... util.o"
 	@echo "... util.i"
 	@echo "... util.s"

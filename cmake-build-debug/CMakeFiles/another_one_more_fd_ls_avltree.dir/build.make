@@ -1136,9 +1136,22 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/parse.c -o CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.s
 
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../sort_args.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/sort_args.c
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/sort_args.c > CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.i
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/sort_args.c -o CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.s
+
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: ../util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/util.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.i: cmake_force
@@ -1234,6 +1247,7 @@ another_one_more_fd_ls_avltree_OBJECTS = \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o" \
+"CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o"
 
 # External object files for target another_one_more_fd_ls_avltree
@@ -1322,10 +1336,11 @@ another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/ft
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o
+another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Linking C executable another_one_more_fd_ls_avltree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Linking C executable another_one_more_fd_ls_avltree"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/another_one_more_fd_ls_avltree.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

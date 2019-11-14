@@ -265,6 +265,12 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: ../ft_printf/ft_printf.
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: ../parse.c
 
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../avl_tree/avltree.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../ft_ls.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../sort_args.c
+
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: ../avl_tree/avltree.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: ../ft_ls.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: ../ft_printf/ft_printf.h
