@@ -3,7 +3,7 @@
 
 # include "ft_printf/libft/libft.h"
 # include "ft_printf/ft_printf.h"
-//# include "avl_tree/avltree.h"
+# include "avl_tree/avltree.h"
 # include <sys/stat.h>
 # include <pwd.h>
 # include <grp.h>
@@ -76,5 +76,7 @@ int         ft_date_cmp(t_data *data1, t_data *data2);
 int	        is_hidden(char *name, unsigned flag);
 
 void    print_files(t_data *data, unsigned *flag);
+//void    ft_print_arr(char ***str);
+int     check_link(t_data *data);
 
 #endif

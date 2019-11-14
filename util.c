@@ -34,3 +34,16 @@ int	        is_hidden(char *name, unsigned flag)
 {
     return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, ".." ) == 0 || (name[0] == '.' && !(flag & FLAG_A)));
 }
+
+int     check_link(t_data *data)
+{
+    char    *tmp;
+    DIR     *d;
+
+    tmp = ft_strnew(PATH_MAX);
+    readlink(data->dir, tmp, PATH_MAX - 1);
+    if (!(d = opendir(tmp)))
+        return (0);
+    closedir(d);
+    return(1);
+}

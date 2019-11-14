@@ -150,6 +150,114 @@ avl.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.s
 .PHONY : avl.c.s
 
+avl_tree/balance.o: avl_tree/balance.c.o
+
+.PHONY : avl_tree/balance.o
+
+# target to build an object file
+avl_tree/balance.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o
+.PHONY : avl_tree/balance.c.o
+
+avl_tree/balance.i: avl_tree/balance.c.i
+
+.PHONY : avl_tree/balance.i
+
+# target to preprocess a source file
+avl_tree/balance.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.i
+.PHONY : avl_tree/balance.c.i
+
+avl_tree/balance.s: avl_tree/balance.c.s
+
+.PHONY : avl_tree/balance.s
+
+# target to generate assembly for a file
+avl_tree/balance.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.s
+.PHONY : avl_tree/balance.c.s
+
+avl_tree/creat_and_insert.o: avl_tree/creat_and_insert.c.o
+
+.PHONY : avl_tree/creat_and_insert.o
+
+# target to build an object file
+avl_tree/creat_and_insert.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o
+.PHONY : avl_tree/creat_and_insert.c.o
+
+avl_tree/creat_and_insert.i: avl_tree/creat_and_insert.c.i
+
+.PHONY : avl_tree/creat_and_insert.i
+
+# target to preprocess a source file
+avl_tree/creat_and_insert.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.i
+.PHONY : avl_tree/creat_and_insert.c.i
+
+avl_tree/creat_and_insert.s: avl_tree/creat_and_insert.c.s
+
+.PHONY : avl_tree/creat_and_insert.s
+
+# target to generate assembly for a file
+avl_tree/creat_and_insert.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.s
+.PHONY : avl_tree/creat_and_insert.c.s
+
+avl_tree/free_avl.o: avl_tree/free_avl.c.o
+
+.PHONY : avl_tree/free_avl.o
+
+# target to build an object file
+avl_tree/free_avl.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o
+.PHONY : avl_tree/free_avl.c.o
+
+avl_tree/free_avl.i: avl_tree/free_avl.c.i
+
+.PHONY : avl_tree/free_avl.i
+
+# target to preprocess a source file
+avl_tree/free_avl.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.i
+.PHONY : avl_tree/free_avl.c.i
+
+avl_tree/free_avl.s: avl_tree/free_avl.c.s
+
+.PHONY : avl_tree/free_avl.s
+
+# target to generate assembly for a file
+avl_tree/free_avl.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.s
+.PHONY : avl_tree/free_avl.c.s
+
+avl_tree/utils.o: avl_tree/utils.c.o
+
+.PHONY : avl_tree/utils.o
+
+# target to build an object file
+avl_tree/utils.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o
+.PHONY : avl_tree/utils.c.o
+
+avl_tree/utils.i: avl_tree/utils.c.i
+
+.PHONY : avl_tree/utils.i
+
+# target to preprocess a source file
+avl_tree/utils.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.i
+.PHONY : avl_tree/utils.c.i
+
+avl_tree/utils.s: avl_tree/utils.c.s
+
+.PHONY : avl_tree/utils.s
+
+# target to generate assembly for a file
+avl_tree/utils.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.s
+.PHONY : avl_tree/utils.c.s
+
 ft_printf/bonus_wildcard.o: ft_printf/bonus_wildcard.c.o
 
 .PHONY : ft_printf/bonus_wildcard.o
@@ -2295,6 +2403,18 @@ help:
 	@echo "... avl.o"
 	@echo "... avl.i"
 	@echo "... avl.s"
+	@echo "... avl_tree/balance.o"
+	@echo "... avl_tree/balance.i"
+	@echo "... avl_tree/balance.s"
+	@echo "... avl_tree/creat_and_insert.o"
+	@echo "... avl_tree/creat_and_insert.i"
+	@echo "... avl_tree/creat_and_insert.s"
+	@echo "... avl_tree/free_avl.o"
+	@echo "... avl_tree/free_avl.i"
+	@echo "... avl_tree/free_avl.s"
+	@echo "... avl_tree/utils.o"
+	@echo "... avl_tree/utils.i"
+	@echo "... avl_tree/utils.s"
 	@echo "... ft_printf/bonus_wildcard.o"
 	@echo "... ft_printf/bonus_wildcard.i"
 	@echo "... ft_printf/bonus_wildcard.s"

@@ -7,9 +7,9 @@ file(GLOB FILES
         "ft_printflibft/*.h"
         "ft_printf/libft/*.c"
         "ft_printf/*.h"
-        "ft_printf/*.c")
-        #"avl_tree/*.h"
-        #"avl_tree/*.c")
+        "ft_printf/*.c"
+        "avl_tree/*.h"
+        "avl_tree/*.c")
 
 set(CMAKE_C_STANDARD 99)
 add_definitions(-Wall -Wextra -Werror)

@@ -126,8 +126,11 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     DIR				*d;
 
     errno = 0;
+    ft_bzero(&stats, sizeof(stats));
     if (lstat(dir, &stats) == -1)
-        ft_fprintf(2,"ls: %s: %s\n", dir, strerror(errno));
+    {
+        ft_fprintf(2, "ls: %s: %s\n", dir, strerror(errno));
+    }
     if (!(data = (t_data*)ft_memalloc(sizeof(t_data))))
         return (NULL);
     data->width = ft_memalloc(sizeof(t_width));
@@ -137,13 +140,15 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     width->w_st_nlink = MAX(num_len, width->w_st_nlink);
     data->dir = ft_strdup(dir);
     errno = 0;
-    if (!(d = opendir(data->dir)) && S_ISDIR(data->st_mode) && (!level || flag & FLAG_R_UP))          // !!!!!!!!!!!!!!!!!!
-        ft_fprintf(2,"ls: %s: %s\n", data->dir, strerror(errno));  // !!!!!!!!!!!!
+    if (!(d = opendir(data->dir)) && S_ISDIR(data->st_mode) && (!level || flag & FLAG_R_UP))
+        ft_fprintf(2,"ls: %s: %s\n", data->dir, strerror(errno));
     num_len = ft_fprintf(-1, "%lld", stats.st_size);
     width->w_st_size = MAX(num_len, width->w_st_size);
     data->filename = ft_get_filename(data);
     if (!is_hidden(data->filename, data->flag) || (!data->count && !data->level))
         data = ft_get_values(data, flag, level, count, width);
+    //if (d)
+        //closedir(d);
     return (data);
 }
 
@@ -156,8 +161,8 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
 
     i = 0;
     ft_bzero(&width, sizeof(t_width));
-    args = ac - 1;
-    if (ac == 1)
+    args = ac;
+    if (!ac)
     {
         data = ft_get_data(".", flag, 0, i, &width);
         if (!data)
@@ -170,7 +175,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
         btree_apply_infix_w(*root, ft_set_width, &width);
         free(data);
     }
-    while (i < ac - 1)
+    while (i < ac)
     {
         if (!av[i][0])
         {
@@ -194,7 +199,7 @@ int     ft_creat_data(t_avltree1	**root, int ac, char **av, unsigned flag)
 
 void    recursive(t_data *data, unsigned *flag)
 {
-    if (S_ISLNK((data->stats).st_mode) && *flag &FLAG_R_UP)
+    if (S_ISLNK((data->stats).st_mode) && *flag &FLAG_R_UP && !check_link(data))
         return;
     if (S_ISDIR((data->stats).st_mode) && (!is_hidden(data->filename, data->flag) || (data->args > 0 && !data->level)))   // || S_ISLNK((data->stats).st_mode)
     {
@@ -235,17 +240,62 @@ void    first_put(t_data *data, unsigned *flag)
     }
 }
 
+void	swap_argv(char **av1, char **av2)
+{
+    char    *tmp;
+    tmp = *av1;
+    *av1 = *av2;
+    *av2 = tmp;
+}
+
+int         ft_arg_cmp(char *av1, char *av2)
+{
+    return (ft_strcmp(av1, av2));
+}
+
+char    **ft_sort_args(char **av, int ac)
+{
+    char **argv;
+    int flag;
+    int i;
+
+    i = -1;
+    flag = 1;
+    argv = (char**)ft_memalloc(sizeof(char*) * ac + 1);
+    while (++i < ac)
+        argv[i] = av[i];
+    while (flag)
+    {
+        i = 0;
+        flag = 0;
+        while (i < ac - 1)
+        {
+            if (ft_arg_cmp(argv[i], argv[i + 1]) >= 0)
+            {
+                flag = 1;
+                swap_argv(argv + i, argv + i + 1);
+            }
+            i++;
+        }
+        ac--;
+    }
+    return (argv);
+}
+
 int			main(int ac, char **av)
 {
     t_avltree1	*root_content;
     unsigned    flag;
+    char    **argv;
 
+    ac--;
     av++;
     flag = 0;
     root_content = NULL;
     if (ft_ls_parse(&ac, &av, &flag))
         return (1);
-    if (ft_creat_data(&root_content, ac, av, flag) == 1)
+    argv = ft_sort_args(av, ac);
+    if (ft_creat_data(&root_content, ac, argv, flag) == 1)
     {
         ft_avlt_free1(&root_content);
         return (1);
@@ -253,5 +303,6 @@ int			main(int ac, char **av)
     btree_apply_infix(root_content, first_put, &flag);
     btree_apply_infix(root_content, recursive, &flag);
     ft_avlt_free1(&root_content);
+    free(argv);
     return (0);
 }

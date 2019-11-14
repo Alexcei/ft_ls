@@ -3,8 +3,25 @@
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.o
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl.c
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_ls.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.h
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/balance.c
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/creat_and_insert.c
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/free_avl.c
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/utils.c
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/bonus_wildcard.c
@@ -231,21 +248,25 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/parser.c
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_ls.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/main.c
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_ls.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/out_put.c
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_ls.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/parse.c
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o
+ /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_ls.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.h
  /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/libft.h

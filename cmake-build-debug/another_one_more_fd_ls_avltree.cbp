@@ -83,6 +83,21 @@
 		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl.c">
 			<Option target="another_one_more_fd_ls_avltree"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/avltree.h">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/balance.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/creat_and_insert.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/free_avl.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/utils.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_ls.h">
 			<Option target="another_one_more_fd_ls_avltree"/>
 		</Unit>
