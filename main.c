@@ -57,10 +57,7 @@ t_avltree1   *ft_creat_subtree(t_data *data)
     subtree = NULL;
     ft_bzero(&width, sizeof(t_width));
     if (!(d = opendir(data->dir)))
-    {
-        //data->st_mode = 0;
         return (NULL);
-    }
     while ((dirent = readdir(d)))
         fill_with_file(dirent->d_name, data, &subtree, &width);
     closedir(d);
@@ -78,7 +75,10 @@ t_data	*ft_get_values(t_data *data, unsigned flag, int level, int count, t_width
     data->flag = flag;
     data->time = (data->stats).st_mtime;
     if (!is_hidden(data->filename, data->flag) || (!data->level))
-        data->subtree = ft_creat_subtree(data);
+    {
+        if (data->level < 2 || flag & FLAG_R_UP)
+            data->subtree = ft_creat_subtree(data);
+    }
     else
         data->subtree = NULL;
     if ((pwd = getpwuid((data->stats).st_uid)))
@@ -128,9 +128,7 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     errno = 0;
     ft_bzero(&stats, sizeof(stats));
     if (lstat(dir, &stats) == -1)
-    {
         ft_fprintf(2, "ls: %s: %s\n", dir, strerror(errno));
-    }
     if (!(data = (t_data*)ft_memalloc(sizeof(t_data))))
         return (NULL);
     data->width = ft_memalloc(sizeof(t_width));
@@ -139,16 +137,16 @@ t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *w
     num_len = ft_fprintf(-1, "%lld", data->stats.st_nlink) + 1;
     width->w_st_nlink = MAX(num_len, width->w_st_nlink);
     data->dir = ft_strdup(dir);
+    data->filename = ft_get_filename(data);
     errno = 0;
     if (!(d = opendir(data->dir)) && S_ISDIR(data->st_mode) && (!level || flag & FLAG_R_UP))
-        ft_fprintf(2,"ls: %s: %s\n", data->dir, strerror(errno));
+        ft_fprintf(2,"ls: %s: %s\n", data->filename, strerror(errno));
     num_len = ft_fprintf(-1, "%lld", stats.st_size);
     width->w_st_size = MAX(num_len, width->w_st_size);
-    data->filename = ft_get_filename(data);
     if (!is_hidden(data->filename, data->flag) || (!data->count && !data->level))
         data = ft_get_values(data, flag, level, count, width);
-    //if (d)
-        //closedir(d);
+    if (d)
+        closedir(d);
     return (data);
 }
 
@@ -201,7 +199,7 @@ void    recursive(t_data *data, unsigned *flag)
 {
     if (S_ISLNK((data->stats).st_mode) && *flag &FLAG_R_UP && !check_link(data))
         return;
-    if (S_ISDIR((data->stats).st_mode) && (!is_hidden(data->filename, data->flag) || (data->args > 0 && !data->level)))   // || S_ISLNK((data->stats).st_mode)
+    if ((S_ISDIR((data->stats).st_mode) && (!is_hidden(data->filename, data->flag) || (data->args > 0 && !data->level))) || check_link(data))
     {
         if (*flag & FLAG_SPC)
             ft_printf("\n");
@@ -224,6 +222,8 @@ void    recursive(t_data *data, unsigned *flag)
 
 void    first_put(t_data *data, unsigned *flag)
 {
+    if (check_link(data))
+        return ;
     if (lstat(data->dir, &(data->stats)) == -1)
         return ;
     if (S_ISLNK((data->stats).st_mode) && *flag & FLAG_L)

@@ -92,12 +92,21 @@ void	print_link(t_data *data)
     free(tmp);
 }
 
+void    print_extended(t_data *data)
+{
+    if (listxattr(data->dir, NULL, 0, XATTR_NOFOLLOW) > 0)
+        ft_printf("@");
+    else
+        ft_printf(" ");
+}
+
 void    print_files(t_data *data, unsigned *flag)
 {
     if (*flag & FLAG_L)
     {
         print_permissions(data);
-        ft_printf(" %*d ", data->width->w_st_nlink, data->stats.st_nlink);
+        print_extended(data);
+        ft_printf("%*d ", data->width->w_st_nlink, data->stats.st_nlink);
         ft_printf("%-*s ", data->width->w_pw_name, data->pw_name);
         ft_printf(" %-*s ", data->width->w_gr_name, data->gr_name);
         ft_printf(" %*lld ", data->width->w_st_size, data->stats.st_size);
