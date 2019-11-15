@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.o"
+  "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o"
+  "CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o"
   "CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o"

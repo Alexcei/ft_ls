@@ -150,6 +150,33 @@ avl.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.s
 .PHONY : avl.c.s
 
+avl_del.o: avl_del.c.o
+
+.PHONY : avl_del.o
+
+# target to build an object file
+avl_del.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o
+.PHONY : avl_del.c.o
+
+avl_del.i: avl_del.c.i
+
+.PHONY : avl_del.i
+
+# target to preprocess a source file
+avl_del.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.i
+.PHONY : avl_del.c.i
+
+avl_del.s: avl_del.c.s
+
+.PHONY : avl_del.s
+
+# target to generate assembly for a file
+avl_del.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.s
+.PHONY : avl_del.c.s
+
 avl_tree/balance.o: avl_tree/balance.c.o
 
 .PHONY : avl_tree/balance.o
@@ -257,6 +284,33 @@ avl_tree/utils.s: avl_tree/utils.c.s
 avl_tree/utils.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.s
 .PHONY : avl_tree/utils.c.s
+
+balance_avl.o: balance_avl.c.o
+
+.PHONY : balance_avl.o
+
+# target to build an object file
+balance_avl.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o
+.PHONY : balance_avl.c.o
+
+balance_avl.i: balance_avl.c.i
+
+.PHONY : balance_avl.i
+
+# target to preprocess a source file
+balance_avl.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.i
+.PHONY : balance_avl.c.i
+
+balance_avl.s: balance_avl.c.s
+
+.PHONY : balance_avl.s
+
+# target to generate assembly for a file
+balance_avl.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.s
+.PHONY : balance_avl.c.s
 
 ft_printf/bonus_wildcard.o: ft_printf/bonus_wildcard.c.o
 
@@ -2511,6 +2565,9 @@ help:
 	@echo "... avl.o"
 	@echo "... avl.i"
 	@echo "... avl.s"
+	@echo "... avl_del.o"
+	@echo "... avl_del.i"
+	@echo "... avl_del.s"
 	@echo "... avl_tree/balance.o"
 	@echo "... avl_tree/balance.i"
 	@echo "... avl_tree/balance.s"
@@ -2523,6 +2580,9 @@ help:
 	@echo "... avl_tree/utils.o"
 	@echo "... avl_tree/utils.i"
 	@echo "... avl_tree/utils.s"
+	@echo "... balance_avl.o"
+	@echo "... balance_avl.i"
+	@echo "... balance_avl.s"
 	@echo "... ft_printf/bonus_wildcard.o"
 	@echo "... ft_printf/bonus_wildcard.i"
 	@echo "... ft_printf/bonus_wildcard.s"

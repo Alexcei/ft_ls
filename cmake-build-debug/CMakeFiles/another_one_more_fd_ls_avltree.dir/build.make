@@ -70,9 +70,22 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl.c -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.s
 
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o: ../avl_del.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_del.c
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_del.c > CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.i
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_del.c -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.s
+
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o: ../avl_tree/balance.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/balance.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o: ../avl_tree/creat_and_insert.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/creat_and_insert.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o: ../avl_tree/free_avl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/free_avl.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o: ../avl_tree/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/utils.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.i: cmake_force
@@ -122,9 +135,22 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/avl_tree/utils.c -o CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.s
 
+CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
+CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o: ../balance_avl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/balance_avl.c
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/balance_avl.c > CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.i
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/balance_avl.c -o CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.s
+
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o: ../ft_printf/bonus_wildcard.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/bonus_wildcard.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.i: cmake_force
@@ -137,7 +163,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.s: cmak
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o: ../ft_printf/ft_fprintf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_fprintf.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.i: cmake_force
@@ -150,7 +176,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.s: cmake_fo
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o: ../ft_printf/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/ft_printf.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.i: cmake_force
@@ -163,7 +189,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.s: cmake_for
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.o: ../ft_printf/libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_atoi.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.i: cmake_force
@@ -176,7 +202,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_atoi.c.s: cmake
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.o: ../ft_printf/libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_bzero.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.i: cmake_force
@@ -189,7 +215,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_bzero.c.s: cmak
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.o: ../ft_printf/libft/ft_intlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_intlen.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.i: cmake_force
@@ -202,7 +228,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_intlen.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.o: ../ft_printf/libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isalnum.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.i: cmake_force
@@ -215,7 +241,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalnum.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.o: ../ft_printf/libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isalpha.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.i: cmake_force
@@ -228,7 +254,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isalpha.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.o: ../ft_printf/libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isascii.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.i: cmake_force
@@ -241,7 +267,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isascii.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.o: ../ft_printf/libft/ft_isblank.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isblank.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.i: cmake_force
@@ -254,7 +280,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isblank.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.o: ../ft_printf/libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isdigit.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.i: cmake_force
@@ -267,7 +293,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isdigit.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.o: ../ft_printf/libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isprint.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.i: cmake_force
@@ -280,7 +306,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isprint.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.o: ../ft_printf/libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_isspace.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.i: cmake_force
@@ -293,7 +319,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_isspace.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.o: ../ft_printf/libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_itoa.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.i: cmake_force
@@ -306,7 +332,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_itoa.c.s: cmake
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.o: ../ft_printf/libft/ft_list_reverse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_list_reverse.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.i: cmake_force
@@ -319,7 +345,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_list_reverse.c.
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.o: ../ft_printf/libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_lstadd.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.i: cmake_force
@@ -332,7 +358,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstadd.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.o: ../ft_printf/libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_lstdel.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.i: cmake_force
@@ -345,7 +371,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdel.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.o: ../ft_printf/libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_lstdelone.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.i: cmake_force
@@ -358,7 +384,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstdelone.c.s: 
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.o: ../ft_printf/libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_lstiter.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.i: cmake_force
@@ -371,7 +397,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstiter.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.o: ../ft_printf/libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_lstmap.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.i: cmake_force
@@ -384,7 +410,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstmap.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.o: ../ft_printf/libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_lstnew.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.i: cmake_force
@@ -397,7 +423,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_lstnew.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.o: ../ft_printf/libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memalloc.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.i: cmake_force
@@ -410,7 +436,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memalloc.c.s: c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.o: ../ft_printf/libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memccpy.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.i: cmake_force
@@ -423,7 +449,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memccpy.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.o: ../ft_printf/libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memchr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.i: cmake_force
@@ -436,7 +462,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memchr.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.o: ../ft_printf/libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memcmp.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.i: cmake_force
@@ -449,7 +475,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcmp.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.o: ../ft_printf/libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memcpy.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.i: cmake_force
@@ -462,7 +488,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memcpy.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.o: ../ft_printf/libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memdel.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.i: cmake_force
@@ -475,7 +501,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memdel.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.o: ../ft_printf/libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memmove.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.i: cmake_force
@@ -488,7 +514,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memmove.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.o: ../ft_printf/libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_memset.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.i: cmake_force
@@ -501,7 +527,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_memset.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.o: ../ft_printf/libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putchar.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.i: cmake_force
@@ -514,7 +540,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.o: ../ft_printf/libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putchar_fd.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.i: cmake_force
@@ -527,7 +553,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putchar_fd.c.s:
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.o: ../ft_printf/libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putendl.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.i: cmake_force
@@ -540,7 +566,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.o: ../ft_printf/libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putendl_fd.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.i: cmake_force
@@ -553,7 +579,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putendl_fd.c.s:
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.o: ../ft_printf/libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putnbr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.i: cmake_force
@@ -566,7 +592,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.o: ../ft_printf/libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putnbr_fd.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.i: cmake_force
@@ -579,7 +605,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putnbr_fd.c.s: 
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.o: ../ft_printf/libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putstr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.i: cmake_force
@@ -592,7 +618,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.o: ../ft_printf/libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_putstr_fd.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.i: cmake_force
@@ -605,7 +631,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_putstr_fd.c.s: 
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.o: ../ft_printf/libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strcat.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.i: cmake_force
@@ -618,7 +644,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcat.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.o: ../ft_printf/libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strchr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.i: cmake_force
@@ -631,7 +657,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strchr.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.o: ../ft_printf/libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strclr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.i: cmake_force
@@ -644,7 +670,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strclr.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.o: ../ft_printf/libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strcmp.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.i: cmake_force
@@ -657,7 +683,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcmp.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.o: ../ft_printf/libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strcpy.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.i: cmake_force
@@ -670,7 +696,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strcpy.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.o: ../ft_printf/libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strdel.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.i: cmake_force
@@ -683,7 +709,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdel.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.o: ../ft_printf/libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strdup.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.i: cmake_force
@@ -696,7 +722,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strdup.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.o: ../ft_printf/libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strequ.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.i: cmake_force
@@ -709,7 +735,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strequ.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.o: ../ft_printf/libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_striter.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.i: cmake_force
@@ -722,7 +748,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striter.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.o: ../ft_printf/libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_striteri.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.i: cmake_force
@@ -735,7 +761,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_striteri.c.s: c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.o: ../ft_printf/libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strjoin.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.i: cmake_force
@@ -748,7 +774,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strjoin.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.o: ../ft_printf/libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strlcat.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.i: cmake_force
@@ -761,7 +787,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlcat.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.o: ../ft_printf/libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strlen.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.i: cmake_force
@@ -774,7 +800,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strlen.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.o: ../ft_printf/libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strmap.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.i: cmake_force
@@ -787,7 +813,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmap.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.o: ../ft_printf/libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strmapi.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.i: cmake_force
@@ -800,7 +826,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strmapi.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.o: ../ft_printf/libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strncat.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.i: cmake_force
@@ -813,7 +839,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncat.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.o: ../ft_printf/libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strncmp.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.i: cmake_force
@@ -826,7 +852,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncmp.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.o: ../ft_printf/libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strncpy.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.i: cmake_force
@@ -839,7 +865,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strncpy.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.o: ../ft_printf/libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strnequ.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.i: cmake_force
@@ -852,7 +878,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnequ.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.o: ../ft_printf/libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strnew.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.i: cmake_force
@@ -865,7 +891,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnew.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.o: ../ft_printf/libft/ft_strnlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strnlen.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.i: cmake_force
@@ -878,7 +904,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnlen.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.o: ../ft_printf/libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strnstr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.i: cmake_force
@@ -891,7 +917,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strnstr.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.o: ../ft_printf/libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strrchr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.i: cmake_force
@@ -904,7 +930,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strrchr.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.o: ../ft_printf/libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strsplit.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.i: cmake_force
@@ -917,7 +943,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsplit.c.s: c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.o: ../ft_printf/libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strstr.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.i: cmake_force
@@ -930,7 +956,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strstr.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.o: ../ft_printf/libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strsub.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.i: cmake_force
@@ -943,7 +969,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strsub.c.s: cma
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.o: ../ft_printf/libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_strtrim.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.i: cmake_force
@@ -956,7 +982,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_strtrim.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.o: ../ft_printf/libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_tolower.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.i: cmake_force
@@ -969,7 +995,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_tolower.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.o: ../ft_printf/libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/libft/ft_toupper.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.i: cmake_force
@@ -982,7 +1008,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/libft/ft_toupper.c.s: cm
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.o: ../ft_printf/output_c_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_c_s.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.i: cmake_force
@@ -995,7 +1021,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_c_s.c.s: cmake_fo
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.o: ../ft_printf/output_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_f.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.i: cmake_force
@@ -1008,7 +1034,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_f.c.s: cmake_forc
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.o: ../ft_printf/output_i_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_i_d.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.i: cmake_force
@@ -1021,7 +1047,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_i_d.c.s: cmake_fo
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.o: ../ft_printf/output_o.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_o.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.i: cmake_force
@@ -1034,7 +1060,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_o.c.s: cmake_forc
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.o: ../ft_printf/output_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_p.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.i: cmake_force
@@ -1047,7 +1073,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_p.c.s: cmake_forc
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.o: ../ft_printf/output_persent.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_persent.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.i: cmake_force
@@ -1060,7 +1086,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_persent.c.s: cmak
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.o: ../ft_printf/output_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_u.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.i: cmake_force
@@ -1073,7 +1099,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_u.c.s: cmake_forc
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.o: ../ft_printf/output_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/output_x.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.i: cmake_force
@@ -1086,7 +1112,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/output_x.c.s: cmake_forc
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o: ../ft_printf/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/parser.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.i: cmake_force
@@ -1099,7 +1125,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: ../get_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/get_data.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.i: cmake_force
@@ -1112,7 +1138,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: ../get_data_subtree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/get_data_subtree.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.i: cmake_force
@@ -1125,7 +1151,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/main.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.i: cmake_force
@@ -1138,7 +1164,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o: ../out_put.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/out_put.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.i: cmake_force
@@ -1151,7 +1177,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: ../out_put_permissions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/out_put_permissions.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.i: cmake_force
@@ -1164,7 +1190,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.s: cmake_for
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: ../parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/parse.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.i: cmake_force
@@ -1177,7 +1203,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o: ../sort_args.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/sort_args.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.i: cmake_force
@@ -1190,7 +1216,7 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/sort_args.c.s: cmake_force
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: CMakeFiles/another_one_more_fd_ls_avltree.dir/flags.make
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o: ../util.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o   -c /Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/util.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.i: cmake_force
@@ -1204,10 +1230,12 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.s: cmake_force
 # Object files for target another_one_more_fd_ls_avltree
 another_one_more_fd_ls_avltree_OBJECTS = \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.o" \
+"CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o" \
+"CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o" \
 "CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o" \
@@ -1296,10 +1324,12 @@ another_one_more_fd_ls_avltree_OBJECTS = \
 another_one_more_fd_ls_avltree_EXTERNAL_OBJECTS =
 
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/avl.c.o
+another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_del.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/balance.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/creat_and_insert.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/free_avl.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/avl_tree/utils.c.o
+another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/balance_avl.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/bonus_wildcard.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_fprintf.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/ft_printf.c.o
@@ -1385,7 +1415,7 @@ another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/so
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/util.c.o
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make
 another_one_more_fd_ls_avltree: CMakeFiles/another_one_more_fd_ls_avltree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Linking C executable another_one_more_fd_ls_avltree"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Linking C executable another_one_more_fd_ls_avltree"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/another_one_more_fd_ls_avltree.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
