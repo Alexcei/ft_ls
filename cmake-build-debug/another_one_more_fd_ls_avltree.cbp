@@ -329,10 +329,19 @@
 		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/ft_printf/parser.c">
 			<Option target="another_one_more_fd_ls_avltree"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/get_data.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/get_data_subtree.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/main.c">
 			<Option target="another_one_more_fd_ls_avltree"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/out_put.c">
+			<Option target="another_one_more_fd_ls_avltree"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/out_put_permissions.c">
 			<Option target="another_one_more_fd_ls_avltree"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/another_one_more_fd_ls_avltree/parse.c">

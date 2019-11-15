@@ -1,119 +1,68 @@
 #include "ft_ls.h"
 
-void	print_type(int mode)
+static int	len_year(char *str)
 {
-    char		c;
+    int len;
 
-    if (S_ISREG(mode))
-        c = '-';
-    else if (S_ISDIR(mode))
-        c = 'd';
-    else if (S_ISBLK(mode))
-        c = 'b';
-    else if (S_ISCHR(mode))
-        c = 'c';
-    else if (S_ISLNK(mode))
-        c = 'l';
-    else if (S_ISSOCK(mode))
-        c = 's';
-    else
-        c = '-';
-    ft_printf("%c", c);
+    len = 0;
+    while (*str && *str++ != '\n')
+        len++;
+    return (len);
 }
 
-void	print_permissions(t_data *data)
+static int	get_year(char *str)
 {
-    int			mode;
+    int start;
 
-    mode = data->stats.st_mode;
-    print_type(mode);
-    ft_printf((mode & S_IRUSR) ? "r" : "-");
-    ft_printf((mode & S_IWUSR) ? "w" : "-");
-    if (mode & S_ISUID)
-        ft_printf((mode & S_IXUSR) ? "s" : "S");
-    else
-        ft_printf((mode & S_IXUSR) ? "x" : "-");
-    ft_printf((mode & S_IRGRP) ? "r" : "-");
-    ft_printf((mode & S_IWGRP) ? "w" : "-");
-    if (mode & S_ISGID)
-        ft_printf((mode & S_IXGRP) ? "s" : "S");
-    else
-        ft_printf((mode & S_IXGRP) ? "x" : "-");
-    ft_printf((mode & S_IROTH) ? "r" : "-");
-    ft_printf((mode & S_IWOTH) ? "w" : "-");
-    if (mode & S_ISVTX)
-        ft_printf((mode & S_IXUSR) ? "t" : "T");
-    else
-        ft_printf((mode & S_IXOTH) ? "x" : "-");
+    start = 0;
+    while (++start && *str && *str == ' ')
+        str++;
+    return (start);
 }
 
-static int	ft_nblen(char *str)
+static void		ft_print_date(t_data *data)
 {
-    int i;
-
-    i = 0;
-    while (str[i] && str[i] != '\n')
-        i++;
-    return (i);
-}
-
-static char	*ft_strtim_return(char *str)
-{
-    int i;
-
-    i = 0;
-    while (str[i] && str[i] == ' ')
-        i++;
-    return (str + i);
-}
-
-void		ft_print_date(t_data *data)
-{
-    char	*string;
+    char	*str;
+    char    *year;
     time_t	now;
+    int     len;
 
     now = time(NULL);
-    string = ctime((time_t *)&(data->time));
-    ft_printf("%3.3s ", string + 4);
-    ft_printf("%2.2s ", string + 8);
-    if ((now - data->time) > (365 / 2) * 86400 || (time_t)now < data->time)
-        ft_printf(" %.*s ", ft_nblen(ft_strtim_return(string + 20)), ft_strtim_return(string + 20));
+    str = ctime(&(data->time));
+    ft_printf("%3.3s ", str + 4);
+    ft_printf("%2.2s ", str + 8);
+    year = str + 19 + get_year(str + 20);
+    len = len_year(year);
+    if ((now - data->time) > (365 / 2) * 86400 || now < data->time)
+        ft_printf(" %.*s ", len, year);
     else
-        ft_printf("%5.5s ", string + 11);
+        ft_printf("%5.5s ", str + 11);
 }
 
-void	print_link(t_data *data)
+void    print_flag_l(t_data *data, unsigned *flag)
 {
     char *tmp;
 
-    tmp = ft_strnew(PATH_MAX);
-    readlink(data->dir, tmp, PATH_MAX - 1);
-    ft_printf("%s -> %s\n", data->filename, tmp);
-    free(tmp);
-}
-
-void    print_extended(t_data *data)
-{
-    if (listxattr(data->dir, NULL, 0, XATTR_NOFOLLOW) > 0)
-        ft_printf("@");
-    else
-        ft_printf(" ");
-}
-
-void    print_files(t_data *data, unsigned *flag)
-{
     if (*flag & FLAG_L)
     {
-        print_permissions(data);
-        print_extended(data);
+        ft_output_permissions(data);
+        if (listxattr(data->dir, NULL, 0, XATTR_NOFOLLOW) > 0)
+            ft_printf("@");
+        else
+            ft_printf(" ");
         ft_printf("%*d ", data->width->w_st_nlink, data->stats.st_nlink);
         ft_printf("%-*s ", data->width->w_pw_name, data->pw_name);
         ft_printf(" %-*s ", data->width->w_gr_name, data->gr_name);
         ft_printf(" %*lld ", data->width->w_st_size, data->stats.st_size);
         ft_print_date(data);
     }
-    if (S_ISLNK((data->stats).st_mode) && *flag & FLAG_L)
-        print_link(data);
+    if (S_ISLNK(data->st_mode) && *flag & FLAG_L)
+    {
+        tmp = ft_strnew(PATH_MAX);
+        readlink(data->dir, tmp, PATH_MAX - 1);
+        ft_printf("%s -> %s\n", data->filename, tmp);
+        free(tmp);
+    }
     else
         ft_printf("%s\n", data->filename);
 }

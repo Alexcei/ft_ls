@@ -247,6 +247,18 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o: ../ft_printf
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.o: ../ft_printf/parser.c
 
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: ../avl_tree/avltree.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: ../ft_ls.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o: ../get_data.c
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: ../avl_tree/avltree.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: ../ft_ls.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o: ../get_data_subtree.c
+
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o: ../avl_tree/avltree.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o: ../ft_ls.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/main.c.o: ../ft_printf/ft_printf.h
@@ -258,6 +270,12 @@ CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o: ../ft_ls.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o: ../ft_printf/ft_printf.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o: ../ft_printf/libft/libft.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.o: ../out_put.c
+
+CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: ../avl_tree/avltree.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: ../ft_ls.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: ../ft_printf/ft_printf.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: ../ft_printf/libft/libft.h
+CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o: ../out_put_permissions.c
 
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: ../avl_tree/avltree.h
 CMakeFiles/another_one_more_fd_ls_avltree.dir/parse.c.o: ../ft_ls.h

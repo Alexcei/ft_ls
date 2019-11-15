@@ -63,6 +63,12 @@ struct            s_avltree1
     t_avltree1      *right;
 }                         ;
 
+t_avltree1   *ft_creat_subtree(t_data *data);
+void    btree_apply_infix_w(t_avltree1 *root, void (*applyf)(t_data*, t_width*), t_width *width);
+void    ft_set_width(t_data *data, t_width *width);
+void    ft_fill_tree_data(t_avltree1 **root, unsigned flag, t_data *data_subtree);
+t_data			*ft_get_data(char *dir, unsigned flag, int level, int count, t_width *width);
+
 void		      ft_avlt_free1(t_avltree1 **root);
 void              ft_avlt_insert1(t_avltree1 **root, t_data *data, int (*cmp)(t_data *,t_data *));
 unsigned char     height1(t_avltree1* p);
@@ -75,8 +81,9 @@ int         ft_name_cmp(t_data *data1, t_data *data2);
 int         ft_date_cmp(t_data *data1, t_data *data2);
 int	        is_hidden(char *name, unsigned flag);
 
-void    print_files(t_data *data, unsigned *flag);
+void    print_flag_l(t_data *data, unsigned *flag);
 char    **ft_sort_args(char **av, int ac);
-int     check_link(t_data *data);
+int     ft_check_link(t_data *data);
+void	ft_output_permissions(t_data *data);
 
 #endif

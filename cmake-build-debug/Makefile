@@ -2283,6 +2283,60 @@ ft_printf/parser.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/ft_printf/parser.c.s
 .PHONY : ft_printf/parser.c.s
 
+get_data.o: get_data.c.o
+
+.PHONY : get_data.o
+
+# target to build an object file
+get_data.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.o
+.PHONY : get_data.c.o
+
+get_data.i: get_data.c.i
+
+.PHONY : get_data.i
+
+# target to preprocess a source file
+get_data.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.i
+.PHONY : get_data.c.i
+
+get_data.s: get_data.c.s
+
+.PHONY : get_data.s
+
+# target to generate assembly for a file
+get_data.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data.c.s
+.PHONY : get_data.c.s
+
+get_data_subtree.o: get_data_subtree.c.o
+
+.PHONY : get_data_subtree.o
+
+# target to build an object file
+get_data_subtree.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.o
+.PHONY : get_data_subtree.c.o
+
+get_data_subtree.i: get_data_subtree.c.i
+
+.PHONY : get_data_subtree.i
+
+# target to preprocess a source file
+get_data_subtree.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.i
+.PHONY : get_data_subtree.c.i
+
+get_data_subtree.s: get_data_subtree.c.s
+
+.PHONY : get_data_subtree.s
+
+# target to generate assembly for a file
+get_data_subtree.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/get_data_subtree.c.s
+.PHONY : get_data_subtree.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -2336,6 +2390,33 @@ out_put.s: out_put.c.s
 out_put.c.s:
 	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put.c.s
 .PHONY : out_put.c.s
+
+out_put_permissions.o: out_put_permissions.c.o
+
+.PHONY : out_put_permissions.o
+
+# target to build an object file
+out_put_permissions.c.o:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.o
+.PHONY : out_put_permissions.c.o
+
+out_put_permissions.i: out_put_permissions.c.i
+
+.PHONY : out_put_permissions.i
+
+# target to preprocess a source file
+out_put_permissions.c.i:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.i
+.PHONY : out_put_permissions.c.i
+
+out_put_permissions.s: out_put_permissions.c.s
+
+.PHONY : out_put_permissions.s
+
+# target to generate assembly for a file
+out_put_permissions.c.s:
+	$(MAKE) -f CMakeFiles/another_one_more_fd_ls_avltree.dir/build.make CMakeFiles/another_one_more_fd_ls_avltree.dir/out_put_permissions.c.s
+.PHONY : out_put_permissions.c.s
 
 parse.o: parse.c.o
 
@@ -2667,12 +2748,21 @@ help:
 	@echo "... ft_printf/parser.o"
 	@echo "... ft_printf/parser.i"
 	@echo "... ft_printf/parser.s"
+	@echo "... get_data.o"
+	@echo "... get_data.i"
+	@echo "... get_data.s"
+	@echo "... get_data_subtree.o"
+	@echo "... get_data_subtree.i"
+	@echo "... get_data_subtree.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... out_put.o"
 	@echo "... out_put.i"
 	@echo "... out_put.s"
+	@echo "... out_put_permissions.o"
+	@echo "... out_put_permissions.i"
+	@echo "... out_put_permissions.s"
 	@echo "... parse.o"
 	@echo "... parse.i"
 	@echo "... parse.s"

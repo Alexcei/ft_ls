@@ -32,10 +32,11 @@ void    btree_apply_infix(t_avltree1 *root, void (*applyf)(t_data*, unsigned *i)
 
 int	        is_hidden(char *name, unsigned flag)
 {
-    return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, ".." ) == 0 || (name[0] == '.' && !(flag & FLAG_A)));
+    return (ft_strcmp(name, ".") == 0 || ft_strcmp(name, ".." ) == 0
+    || (name[0] == '.' && !(flag & FLAG_A)));
 }
 
-int     check_link(t_data *data)
+int     ft_check_link(t_data *data)
 {
     char    *tmp;
     DIR     *d;
@@ -43,7 +44,11 @@ int     check_link(t_data *data)
     tmp = ft_strnew(PATH_MAX);
     readlink(data->dir, tmp, PATH_MAX - 1);
     if (!(d = opendir(tmp)))
+    {
+        ft_strdel(&tmp);
         return (0);
+    }
     closedir(d);
+    ft_strdel(&tmp);
     return(1);
 }
